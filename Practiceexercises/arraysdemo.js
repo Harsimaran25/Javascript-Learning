@@ -55,7 +55,7 @@ console.log(marks.includes(20,5))// here it is checking for 20 value, starting f
 console.log("Array is "+ marks)
 marks.slice(2,5)// this will create sub array starting from index 2 of marks array up till index 4 so 30,100,20
 // we cud store it in another array, JS intelligently know it will be var as original array was var
-subarry=marks.slice(2,5);
+     subarry=marks.slice(2,5);
 console.log(subarry);
 console.log(Math.random());
 console.log(Math.random()*10);
