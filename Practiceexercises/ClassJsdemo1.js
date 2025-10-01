@@ -17,6 +17,8 @@ class Person {
     constructor(name, age) {
         this.name = name;
         this.age = age;
+        //this.name = name;
+//Saves the name instance to the class, so you can use it in other class methods.
     }
     
     // method to display a message
