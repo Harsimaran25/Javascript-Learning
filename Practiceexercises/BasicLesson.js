@@ -102,3 +102,8 @@ let msgprice = " the price of the " + item + " is " + price;
 let msg2 = `the price of the  ${item} is ${price}`;
 console.log(msgprice);
 console.log(msg2);
+
+var x = 10; //var allows this but let will give u redeclaration error
+console.log(x);
+var x = 20; // redeclaration
+console.log(x);
