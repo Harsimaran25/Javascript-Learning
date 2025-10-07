@@ -2,7 +2,9 @@
 buttons you are clicking, birthday cards you are creating, and calculations you are
 doing. Anything that requires more than a static web page needs JavaScript*/
 
-//Variables
+/*Variables Variables are values in your code that can represent different values each
+time the code runs */
+//declare variable - you need a special word for that: let, var, or const
 
 var firstName = "Bhaijaan";
 let lastName = "ClydeKing";
@@ -20,7 +22,8 @@ dateOfBirth = "12/12/1908";
 address = "11 bhakha st";
 console.log(age, address);
 
-age = 27; // reused same variable name but reassigned/reinitalised it with another value
+age = 27; // reused same variable name but reassigned/reinitalised it with another value,
+//  assigned a new value while the code is running
 address = "13 magha";
 console.log(age, address);
 
