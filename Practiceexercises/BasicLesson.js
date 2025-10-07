@@ -55,8 +55,7 @@ let isMaghin = true; //boolean data type
 let isSingle =
   null; /* null is a special value for saying that a variable is empty or has an unknown
 value. This is case sensitive*/
-let numberOfBeetles =
-  undefined; /*undefined is like it does not exist variable that has
+let numberOfBeetles = undefined; /* variable that has
 not been assigned a value. And this data type is undefined ,manually assigning
 undefined is a bad practice*/
 
@@ -84,3 +83,22 @@ same value, and the same type*/
 let sym1 = Symbol("Bhai is Maghin");
 let sym2 = Symbol("Bhai is Maghin");
 console.log("These two Symbols are the same:", sym1 === sym2);
+
+let notGoodidea = undefined;
+let lstName;
+console.log("using undefined:", lstName === notGoodidea);
+
+let goodIdea = null;
+let fstName;
+console.log("using null", fstName === goodIdea);
+/*This shows that an automatically undefined variable, lstName, and a deliberately
+undefined variable, notGoodidea, are considered equal, which is problematic.
+On the other hand, fstName and goodIdea, which was explicitly declared with a
+value of null, are not equal.*/
+
+let item = "cup";
+let price = "$50";
+let msgprice = " the price of the " + item + " is " + price;
+let msg2 = `the price of the  ${item} is ${price}`;
+console.log(msgprice);
+console.log(msg2);
