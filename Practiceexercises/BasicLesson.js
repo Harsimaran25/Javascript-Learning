@@ -52,8 +52,13 @@ and null.*/
 let middleName = "Mpower"; //string
 let area = "Bhakha"; //string
 let isMaghin = true; //boolean data type
-let isSingle = null; //null does not have a value
-let numberOfBeetles = undefined; //undefined is like it does not exist
+let isSingle =
+  null; /* null is a special value for saying that a variable is empty or has an unknown
+value. This is case sensitive*/
+let numberOfBeetles =
+  undefined; /*undefined is like it does not exist variable that has
+not been assigned a value. And this data type is undefined ,manually assigning
+undefined is a bad practice*/
 
 console.log(typeof middleName);
 console.log(typeof area);
@@ -66,3 +71,16 @@ let str1 = "Hello , what's bhai's game? is it \"maghin\"?";
 console.log(str1);
 let str2 = 'is bhai\'s game ?"magin"';
 console.log(str2);
+
+/*Symbol can be used when it is
+important that variables are not equal, even though their value and type are the same
+(in this case, they would both be of the symbol type)*/
+
+let str3 = "JavaScript is fun!";
+let str4 = "JavaScript is fun!";
+console.log("These two strings are the same:", str3 === str4); /*They have the
+same value, and the same type*/
+
+let sym1 = Symbol("Bhai is Maghin");
+let sym2 = Symbol("Bhai is Maghin");
+console.log("These two Symbols are the same:", sym1 === sym2);
