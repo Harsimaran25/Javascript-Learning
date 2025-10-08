@@ -96,3 +96,18 @@ for (key in person) {
 }
 
 //more object practice
+
+let customer = { kaumdishaan: "Bhai", Kaumdeking: "BhaiMpower" };
+
+console.log(customer.kaumdishaan);
+
+customer.kaumdishaan = "Bhaijaan";
+console.log(customer.kaumdishaan);
+//or array notation
+
+console.log(customer["Kaumdeking"]);
+console.log(customer["Kaumdeking"]);
+//adding new property
+
+customer.car = "BMW";
+console.log(customer);
