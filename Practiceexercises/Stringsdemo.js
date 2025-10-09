@@ -10,7 +10,7 @@ console.log("day", day[2]);
 
 //now to split the string into two use split
 let splitday = day.split("s");
-console.log(splitday);
+console.log("split at s", splitday);
 console.log(splitday[0]);
 console.log(splitday[1]);
 console.log(splitday[1].length);
