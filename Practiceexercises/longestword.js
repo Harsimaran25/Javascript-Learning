@@ -5,7 +5,7 @@ function Longest(sen) {
   /*[^a-zA-Z0-9 ]/g is a regex pattern that matches any character that is not:
 [^...]: A negated character class, meaning it matches any character not in the brackets.
 a lowercase letter (a-z)
-
+g means global not just the first match
 an uppercase letter (A-Z)
 
 a digit (0-9)
