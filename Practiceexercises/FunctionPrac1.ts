@@ -13,7 +13,8 @@ console.log(g);
 // let us create a anonymous function to multiply two numbers
 
 let multiply:number=function(num1:number,num2:number):number{ return num1*num2; }
-console.log(multiply(5,10));
+console.log('multiply',multiply(5,10));
+
 
 
 // let us create a arrow function to divide two numbers 

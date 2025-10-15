@@ -33,3 +33,27 @@ ClydeKing.greetBhai();
 
 console.log(ClydeKing.age);
 console.log(ClydeKing.address);
+
+
+//another object 
+
+type cartype={
+
+  brand:string,
+  model:string,
+  power:number,
+  //function inside object
+  stop:()=>void;
+};
+
+let car:cartype={
+  brand:"BMW",
+  model:"X5",
+  power:500,  
+  stop: function(){
+    console.log('this is stop')
+  }
+};
+
+car.stop();
+console.log(car.brand);
