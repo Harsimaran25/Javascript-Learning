@@ -86,3 +86,19 @@ console.log('new arr7',newarr7);//empty
 
 let arr8:number[]= numbersArray.slice(-3,-5);
 console.log('new arr8',arr8);//empty
+
+//lets us see SPLIT method which is for STRINGS
+//The split() method divides a string into a list of substrings and returns them as an array.
+
+let sentence:string ='This is &* bhakha sentence %#$';
+
+let split1:string[] =sentence.split('&'); // divides the string at &
+console.log('split1 is' , split1);
+
+let sentence2:string="Bhakhin is expert in :Java :react :angular :maghin";
+let split2:string[]=sentence2.split(':') // divides the string at :
+console.log('split2 is',split2);
+
+let sentence3:string='Clydeking is expert in :react :angular :java: Js: CSS';
+let split3:string[]=sentence3.split(':',2);
+console.log('split3' ,split3);
