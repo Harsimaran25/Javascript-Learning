@@ -102,3 +102,7 @@ console.log('split2 is',split2);
 let sentence3:string='Clydeking is expert in :react :angular :java: Js: CSS';
 let split3:string[]=sentence3.split(':',2);// only split string to maximum to two parts
 console.log('split3' ,split3);
+
+let sentence4:string='this is a     sentence with many spaces  ';
+let split4:string[]=sentence4.split(' '); //splitting at space
+console.log('split4' ,split4);
