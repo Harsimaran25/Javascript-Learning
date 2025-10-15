@@ -15,3 +15,4 @@ const ClydeKing = {
     console.log("Hello", this.name, address[1].suburb);
   },
 };
+ClydeKing.greetBhai();
