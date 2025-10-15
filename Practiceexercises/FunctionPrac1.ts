@@ -12,7 +12,7 @@ console.log(g);
 
 // let us create a anonymous function to multiply two numbers
 
-let multiply:number=function(num1:number,num2:number):number{ return num1*num2; }
+let multiply=function(num1:number,num2:number):number{ return num1*num2; }
 console.log('multiply',multiply(5,10));
 
 
@@ -26,3 +26,4 @@ console.log(d);
 let subtract=(a:number,b:number):number=>{return a-b};
 let s=subtract(10,5);
 console.log(s);
+
