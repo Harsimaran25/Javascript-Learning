@@ -23,7 +23,7 @@ console.log('after splice',numbersArray);
 numbersArray.unshift(12,14);
 console.log('after unshift',numbersArray);
 
-let splicedTwo= numbersArray.splice(2,1,100); //replace 1 element from index 2 with 100
+let splicedTwo:number[]= numbersArray.splice(2,1,100); //replace 1 element from index 2 with 100
 console.log('splicedtwo is',splicedTwo);
 console.log('after splice',numbersArray);
 // remove element from the beginning of the array using shift
@@ -40,7 +40,7 @@ console.log('after splice ed',numbersArray);
 
 // lets us see example where the starting index is greater then lenght of array and how splice can append values to end without removing
 
-let lengtharr= numbersArray.length
+let lengtharr:number= numbersArray.length
 console.log(lengtharr);
 
 numbersArray.splice(3,0,400,500); //as start index is > lengthdoes not delete anything and starts appending arguments to the end of the array.
@@ -61,28 +61,28 @@ numbersArray.splice(-2,2,39,18,19)
 console.log('after splice start index 2nd last',numbersArray)
 //let us see another method called SLICE
 
-let newarr1 = numbersArray.slice(2); // slicing from the third element or index 2
+let newarr1 :number[]= numbersArray.slice(2); // slicing from the third element or index 2
 console.log(numbersArray);
 console.log(newarr1);
 // if NO start index is provided  slicing the array (from start to end)
-let newarr2=numbersArray.slice();
+let newarr2:number[]=numbersArray.slice();
 console.log('slice without parameter',newarr2)
 
 // slicing from the second element to fourth element in slice Ending index of the selection (exclusive)
-let newarr3=numbersArray.slice(1,4);
+let newarr3:number[]=numbersArray.slice(1,4);
 console.log(newarr3);
 
 // using slice with -ve index
-let newarr4= numbersArray.slice(0,-1) // so -1 means last element , -2 means second last element 
+let newarr4:number[]= numbersArray.slice(0,-1) // so -1 means last element , -2 means second last element 
 console.log('new arr4',newarr4);
 
-let newarr5=numbersArray.slice(-3);// slicing the array from third-to-last till index 0 or start
+let newarr5:number[]=numbersArray.slice(-3);// slicing the array from third-to-last till index 0 or start
 console.log('new arr5',newarr5);
 
-let newarr6=numbersArray.slice(3,-3);
+let newarr6:number[]=numbersArray.slice(3,-3);
 console.log('new arr6',newarr6);
-let newarr7=numbersArray.slice(-3,5);
+let newarr7:number[]=numbersArray.slice(-3,5);
 console.log('new arr7',newarr7);//empty
 
-let arr8= numbersArray.slice(-3,-5);
+let arr8:number[]= numbersArray.slice(-3,-5);
 console.log('new arr8',arr8);//empty
