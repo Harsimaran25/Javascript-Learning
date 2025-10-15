@@ -12,7 +12,10 @@ const ClydeKing = {
     },
   ],
   greetBhai: function () {
-    console.log("Hello", this.name, address[1].suburb);
+    console.log("Hello", this.name, this.address[1].suburb);
   },
 };
 ClydeKing.greetBhai();
+
+console.log(ClydeKing.age);
+console.log(ClydeKing.address);
