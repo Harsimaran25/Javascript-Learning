@@ -81,5 +81,13 @@ console.log(itemcpy2)
 
 //for..of loop is better to use instead foreach
 //The for..of loop in JavaScript allows you to iterate over iterable objects (arrays, sets, maps, strings etc).
+//for (element of iterable) {
+    // body of for...of
+//}
+for(let item of items){
+
+    console.log('using for of loop',item);
+}
+
 
 //the JavaScript for...in loop iterates over the keys of an object
