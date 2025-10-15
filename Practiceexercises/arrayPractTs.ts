@@ -100,5 +100,5 @@ let split2:string[]=sentence2.split(':') // divides the string at :
 console.log('split2 is',split2);
 
 let sentence3:string='Clydeking is expert in :react :angular :java: Js: CSS';
-let split3:string[]=sentence3.split(':',2);
+let split3:string[]=sentence3.split(':',2);// only split string to maximum to two parts
 console.log('split3' ,split3);
