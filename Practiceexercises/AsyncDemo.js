@@ -17,5 +17,13 @@ setTimeout(() => {
   console.log("this is 5th line");
 }, 2000); //have provided 2000ms which is 2 seconds
 
+//setTimeout(function(){
+//console.log('this is 6th line')},2000);
 console.log("this is 6st line");
 console.log("this is 7st line");
+
+let nums = [10, 20, 33, 14, 40, 44];
+
+//using filter
+let evenNum = nums.filter((num) => num % 2 == 0);
+console.log(evenNum);
