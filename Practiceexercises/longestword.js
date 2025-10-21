@@ -29,3 +29,23 @@ a space ( )
 }
 
 console.log(Longest("time $%$ is long"));
+
+//another program to replace duplicates in a string
+
+function ReplaceDup(sent) {
+  let result = "";
+  let found = "";
+
+  for (let c = 0; c < sent.length; c++) {
+    let chara = sent[c];
+    if (found.indexOf(chara) === -1) {
+      result = result + chara;
+      found = found + chara;
+    }
+  }
+  return result;
+}
+
+const p = ReplaceDup("boo");
+console.log(p);
+console.log(ReplaceDup("aabcdboom"));
