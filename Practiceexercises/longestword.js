@@ -28,7 +28,7 @@ a space ( )
   return longest;
 }
 
-console.log(Longest("time $%$ is long"));
+console.log(Longest("time5 $%$ is long"));
 
 //another program to replace duplicates in a string
 

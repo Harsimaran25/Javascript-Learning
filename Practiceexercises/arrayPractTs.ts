@@ -1,15 +1,15 @@
 //Arrays practice in Typescript
 
-const fruits :string[] = ['apple','grapes','banana','strawberry'];
+const fruits1 :string[] = ['apple','grapes','banana','strawberry'];
 
 //add element to array above at end use push
 
-fruits.push('Blueberry','Lychee');
+fruits1.push('Blueberry','Lychee');
 
 console.log('added' , fruits);
 console.log('added' +' '+ fruits); //here it is gonna concatenate
 //delete or remove element from  the array at end
-fruits.pop();
+fruits1.pop();
 console.log('after pop',fruits);
 
 

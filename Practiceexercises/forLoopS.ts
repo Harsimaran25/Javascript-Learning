@@ -1,4 +1,5 @@
-//practice:  foreach is a method of arrays.The forEach() method executes a provided function for each array element. it behaves like a loop
+//practice:  foreach is a method of arrays.The forEach() method executes a provided function for each array element.
+//  it behaves like a loop
 
 //syntax arr.forEach(callback(currentValue), thisArg)  , arr is an array.
 //thisArg (optional)
