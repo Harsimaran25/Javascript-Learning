@@ -10,3 +10,9 @@ console.log('after splice',numbersArray1);
 let splicedTwo2:number[]= numbersArray1.splice(2,1,100); //replace 1 element from index 2 with 100
 console.log('splicedtwo is',splicedTwo2);
 console.log('after splice2',numbersArray1);
+
+
+
+let newarr11 :number[]= numbersArray1.slice(1); // slicing from the third element or index 2
+console.log(numbersArray1);
+console.log('slice',newarr11);
