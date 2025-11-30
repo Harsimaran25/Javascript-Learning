@@ -140,3 +140,69 @@ console.log(typeof bb); // "object"
 
 
 //TypeScript null --> In TypeScript, the null data type represents an intentional absence of any value. For example
+
+let userId: null;
+userId=null // setting the value to null explicitly
+
+console.log(userId)
+
+
+//TypeScript Array
+//An array stores multiple elements in a single variable and can hold elements of any type.
+let itemsQty: number[] = [10,13,90,39,100]
+console.log('array is',itemsQty, 'type is', typeof(itemsQty))
+
+//array of type strings
+
+let items: string[] =['brush','table','chair','cup']
+console.log(items)
+
+
+// TypeScript Tuple
+// A tuple in TypeScript is a type of array where each element has a specific, predefined type. For example,
+
+let userDetails: [string,number]= ['Bhai', 420]
+console.log(userDetails)
+
+//TypeScript any
+//In TypeScript, the any type allows a variable to hold any type of value without strict type checking. For example,
+
+// Initially, TypeScript interprets the anything variable as a string
+let anything: any = "I can be anything!";
+console.log(anything);
+
+// Now it's a number
+anything = 42;
+console.log(anything);
+
+// Now it's a boolean
+anything = false;
+console.log(anything);
+//NOTE:The any type is very flexible but less safe because it bypasses TypeScript's type safety features.AVOID using it
+
+//TypeScript unknown
+/*In TypeScript, the unknown type is similar to any but is safer, since it requires you to perform some 
+type of checking before performing operations on such values.*/
+let value: unknown = "Hello, TypeScript"; // Value is unknown
+
+// Direct operations on 'unknown' type are not allowed
+// console.log(value.toUpperCase()); // Error: Object is of type 'unknown'.
+
+// Correct usage requires type checking
+if (typeof value === "string") {
+    console.log(value.toUpperCase()); 
+}
+
+/**In the example, we start with a variable value of type unknown, which means TypeScript doesn't yet know what type of data it holds.
+
+So, before using value, we check if it's a string in order to perform string operations on it. If we don't, we'll get an error. */
+
+/**TypeScript void
+In TypeScript, the void type indicates that a function does not return any value. For example, */
+
+function greet(): void{
+    console.log('Hello this is function with return type as void')
+}
+
+//call the function
+greet();
