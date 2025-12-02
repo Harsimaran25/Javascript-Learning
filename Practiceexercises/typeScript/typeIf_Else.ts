@@ -172,3 +172,85 @@ else {
 let anum: number = 3;
 let result1: string = (anum >= 0) ? (anum == 0 ? "zero" : "positive") : "negative";
 console.log(`The number is ${result1}.`);
+
+
+//Largest of Two Integers
+
+let num01: number = 40 , num02 :number =50
+
+if(num01>num02){
+
+    console.log(num01)
+}
+else {
+    console.log(num02)
+}
+
+//Sign of Product of Three Numbers
+
+// Sample numbers : 3, -7, 2
+
+// Output : The sign is -
+
+let no_1:number=3,no_2:number=-7,no_3:number =2;
+
+if(no_1*no_2*no_3 > 0){
+
+    console.log('sign is +')
+}
+else {console.log('sign is -ve')}
+
+/**parseInt(num1, 10) is a JavaScript function call 
+ * that converts the value of num1 into an integer, using base 10 (decimal) for interpretation.
+ * parseInt("42", 10);   // returns 42
+parseInt("3.14", 10); // returns 3 (stops at decimal point)
+parseInt("101", 2);   // returns 5 (binary to decimal)
+parseInt("FF", 16);   // returns 255 (hexadecimal to decimal)
+ */
+//Sort Three Numbers
+// Sample numbers : 0, -1, 4
+
+// Output : 4, 0, -1
+
+let no1:number=10,no2:number=91,no3:number =4;
+
+if(no1 > no2 && no1 > no3 ){
+
+    if(no2>no3){
+
+        console.log(`${no1} is > ${no2} is >${no3}`)
+    } else{
+        console.log(`${no1} > then ${no3} is > ${no2}`)
+    }
+}else if(no2>no1 && no2 > no3){
+
+    if(no1>no3){
+        console.log(`${no2} is > ${no1} is >${no3}`)
+    } else {
+          console.log(`${no2} > then ${no3} is > ${no1}`)
+    }
+} else if(no3>no1 && no3 >no2){
+    if(no1 >no2) {
+        console.log(`${no3} is > ${no1} is >${no2}`)
+    } 
+    else{
+          console.log(`${no3} > then ${no2} is > ${no1}`)
+    }
+}
+
+
+// above program can be written using array 
+let x:number=10,v:number=91,n:number =4;
+
+let arr: number[]=[x,v,n]
+
+console.log(arr)
+
+ arr.sort((a,b)=>a-b)
+ console.log(arr)
+  
+ console.log('largest is',arr[arr.length-1])
+ // program to find largest of 5 numbers  using above sort and print last index lenght -1
+arr.sort((a,b)=>b-a)
+console.log(arr)
+ console.log('smallest is',arr[arr.length-1])
