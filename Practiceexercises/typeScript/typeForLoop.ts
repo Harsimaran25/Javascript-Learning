@@ -59,3 +59,10 @@ for (; k < 3; ) {
     // Increment inside the loop body
     k++; 
 }
+
+
+///-----
+// Odd or Even Loop
+
+// Write a JavaScript for loop that iterates from 0 to 15. 
+// For each iteration, it checks if the current number is odd or even, and displays a message on the screen.
