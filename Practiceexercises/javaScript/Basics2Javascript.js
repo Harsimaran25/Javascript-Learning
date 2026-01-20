@@ -55,3 +55,15 @@ console.log(studentDetails.firstName)
   console.log('increment is', kcount++)
   console.log(kcount)
   console.log('assignment operator', kcount+=3) //// kcount = kcount + 3
+
+  //JavaScript Logical Operators We use logical operators to perform logical operations on boolean expressions
+
+  console.log('&& is the logical operator AND')
+
+  const j1=7,j2=3;
+
+  console.log((j1<8)&&(j2>1))  // Output: true
+
+
+  
+
