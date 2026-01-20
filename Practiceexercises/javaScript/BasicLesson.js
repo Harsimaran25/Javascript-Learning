@@ -27,6 +27,10 @@ console.log("fullname is ", firstName + " " + lastName); // to print at terminal
 console.log(`fullname is ${firstName} ${lastName}`);
 console.log(message);
 console.log(message2);
+
+var Jk='BhaiLotto'
+console.log(Jk)
+console.log(firstName +' is '+Jk)
 //we can also declare variables like below
 
 var age, dateOfBirth;
@@ -36,6 +40,7 @@ age = 25;
 dateOfBirth = "12/12/1908";
 address = "11 bhakha st";
 console.log(age, address);
+console.log(`${address} is this`)
 
 age = 27; // reused same variable name but reassigned/reinitalised it with another value,
 //  assigned a new value while the code is running
@@ -52,8 +57,7 @@ and null.*/
 let middleName = "Mpower"; //string
 let area = "Bhakha"; //string
 let isMaghin = true; //boolean data type
-let isSingle =
-  null; /* null is a special value for saying that a variable is empty or has an unknown
+let isSingle =  null; /* null is a special value for saying that a variable is empty or has an unknown
 value. This is case sensitive*/
 let numberOfBeetles = undefined; /* variable that has
 not been assigned a value. And this data type is undefined ,manually assigning
@@ -82,7 +86,7 @@ same value, and the same type*/
 
 let sym1 = Symbol("Bhai is Maghin");
 let sym2 = Symbol("Bhai is Maghin");
-console.log("These two Symbols are the same:", sym1 === sym2);
+console.log("These two Symbols are the same:?", sym1 === sym2);
 
 let notGoodidea = undefined;
 let lstName;
