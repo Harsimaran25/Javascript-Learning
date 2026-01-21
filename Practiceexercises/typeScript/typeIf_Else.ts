@@ -43,6 +43,15 @@ else {
 //// Program to check if the student passed
 
 let score : number = 10
+let score_2 : number =49
+if(score_2 >45 ){
+
+    console.log('Student passed')
+}
+else{
+    console.log('Student not passed')
+}
+
 
 if(score >= 40)
 {

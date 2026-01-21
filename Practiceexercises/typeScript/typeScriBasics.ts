@@ -35,7 +35,8 @@ console.log(age1)
 // // This is a valid code
 // age = "Twenty";
 
-
+let full_name : string='Bhai ki Lotto'
+console.log(full_name)
 
 var name: string ='Bhai'  //var allows to redeclare variables.
 let marks: number =40  
