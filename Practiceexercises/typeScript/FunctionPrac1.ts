@@ -96,3 +96,90 @@ function display(): string {
 
 let message: string = display();
 console.log(message);
+
+
+/**Function Expressions
+In TypeScript, a function expression is a way to store functions in variables */
+
+/**Syntax
+
+const variableName = function functionName(parameters): returnType {
+  // Function body
+}; */
+
+//function declaration
+function fullName(fn:string,ln: string): string{
+
+    return fn+' '+ln;
+}
+
+let fullnm=fullName('bhai','clydeking')
+console.log(fullnm);
+
+//add two numbers
+// Example 1. Assigning a function to a variable  A function expression
+//the function that calculates the addition of a numbers is assigned to the addNos variable.
+let addNos= function addn(a:number, b: number): number{
+    return a+b;
+}
+
+//calling
+console.log('addnos',addNos(9,10))
+
+//another way to write is using without name
+let addnos2= function (a:number, b: number): number{
+    return a+b;
+}
+console.log('addnos2',addnos2(19,10))
+
+//another approach is Declaring a function expression with the Function keyword.
+
+let squarrer: Function;
+
+squarrer= function(n00:number) : number {
+  return n00*n00;
+}
+
+console.log(squarrer(9))
+
+//Arrow Functions TypeScript arrow functions are a concise syntax for writing function expressions with support for type annotations.
+//Arrow functions are always anonymous
+/**The syntax of the arrow function is:
+
+let myFunction = (arg1: Type1, arg2: Type2, ...argN: TypeN): ReturnType => {
+    statement(s)
+} */
+//lets write add number as arrow function
+
+let addArro= (num1:number, num2:number) :number => num1+num2;
+
+const result11:number=addArro(5,14)
+console.log(result11)
+
+//another arrow function to add 100 to a number
+
+let addtonum =(x:number) :number => x+100;
+
+const value1 = 10;
+console.log(`add 100 to number ${value1} =`,addtonum(value1))
+
+//arrow function to multiply 2 nos
+
+let multi2num=(c:number,g:number): number => c*g;
+
+console.log(multi2num(6,4))
+
+//arrow function without arguments or parameters
+
+const sayHi= () : string => 'hello bhai';
+console.log(sayHi())
+
+const greetUser = () : string => {
+    const user ='Typescript User';
+    console.log(`hello ${user} `)
+}
+greetUser()
+
+//Arrow Function With One Argument
+const multi100s= (x : number) : number => x*100;
+console.log(multi100s(9))

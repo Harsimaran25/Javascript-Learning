@@ -106,3 +106,6 @@ console.log('split3' ,split3);
 let sentence4:string='this is a     sentence with many spaces  ';
 let split4:string[]=sentence4.split(' '); //splitting at space
 console.log('split4' ,split4);
+
+
+//some array excercises
