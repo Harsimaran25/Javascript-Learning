@@ -6,11 +6,11 @@ const fruits1 :string[] = ['apple','grapes','banana','strawberry'];
 
 fruits1.push('Blueberry','Lychee');
 
-console.log('added' , fruits);
-console.log('added' +' '+ fruits); //here it is gonna concatenate
+console.log('added' , fruits1);
+console.log('added' +' '+ fruits1); //here it is gonna concatenate
 //delete or remove element from  the array at end
 fruits1.pop();
-console.log('after pop',fruits);
+console.log('after pop',fruits1);
 
 
 const numbersArray : number[] =[10,30,44,33,55,90];
@@ -109,3 +109,90 @@ console.log('split4' ,split4);
 
 
 //some array excercises
+//Arrays are collections of elements of the same data type.
+
+let ages: number[] =[10,50,48,40];
+
+console.log(ages);
+console.log(ages[0])
+
+
+
+/**the syntax to create an array in TypeScript is:
+
+
+let arrayName: elementType[] = [element1, element2, element3]; */
+
+//Adding Elements to an Array
+let studentNames : string[]=['Alice','Bob','Charliee','King'];
+
+console.log(studentNames)
+// we can use push method to add elements to array at the end
+
+studentNames.push('John')
+console.log(studentNames)
+
+//add 2 elements in end
+
+studentNames.push('Cheri','Bin')
+console.log(studentNames)
+
+
+//Add an element to the beginning of an array. use unshift
+
+studentNames.unshift('BhaiJaan')
+console.log(studentNames)
+
+//Change the Elements of an Array
+//We can add or change elements by accessing the index value
+
+let countries : string[]=['Japan','Korea','Thailand','Italy'];
+
+console.log('before changing index 1',countries);
+
+countries[1]='South Korea';
+
+console.log(countries);
+
+
+//Strings are similar to Arrays 
+
+let nAme_State : string='Victoria';
+
+console.log(nAme_State[1]) // will print i
+
+
+/**1. Strings are Immutable
+TypeScript strings are immutable. This means that once a string is created, the characters within it cannot be changed. For example, */
+
+let message_one : string ='This is Test message'
+
+// message_one[1]='L' // will give error , we can only read using index cannot modify
+
+//you can always assign a new value to the string variable itself
+ message_one='Modified Test message'
+
+
+//String Methods
+
+
+//charAt() Returns the character at the specified index.
+
+console.log(message_one.charAt(2)) // print d
+
+
+//concat()	Joins two or more strings.
+
+let message_two : string ='Joined test message';
+let concat_string= message_one.concat(message_two)
+console.log(concat_string)
+//You can retrieve the length of a string using the length property 
+let len_msg_two: number = message_two.length
+console.log(len_msg_two)
+
+//replace() Replace a string with another string.
+
+//trim()	Removes whitespace from the strings.
+
+//Remove Elements From an Array
+// We can remove an element from any specified index of an array using the splice() method.
